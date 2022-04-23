@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Regresar"onclick="history.go(-1)" style="width:100px; height: 50px"/>
+    <script>
+        function clasicarValor(valor){
+            if(valor < 5){
+                alert("Menor que 5");
+            } else if (valor < 10 ){
+                alert("Menor que 10");
+            }else{
+                alert("Mayor o igual a 10");
+
+            }
+                
+         }
+         clasificarValor(2);
+         
+         function interpretarIMC(indiceDeMasaCorporal){
+             if(indiceDeMasaCorporal <18.5){
+                 alert("Bajo Peso");
+             }else if(indiceDeMasaCorporal <= 24.9){
+                 alert("Normal");
+             }else if (indiceDeMasaCorporal<=29.9){
+                 alert("Sobrepeso");
+             }else {
+                 alert("Obeso");
+             }
+         }
+            interpretarIMC(28.5);
+    </script>
+</body>
+</html>
