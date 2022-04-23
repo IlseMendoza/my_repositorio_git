@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <input type="buttonhistory.go(-1)" style="width:100px; height: 50px"/>
+        //objetos anidados" value="Regresar"onclick="
+        var miReceta = {
+            "descripcion": "mi postre favorito",
+            "costo": 15.6,
+            "ingredientes": {
+                "masa": {
+                    "harina": "100 grs",
+                    "sal": "1 cucharadita",
+                    "agua": "1 taza"
+                },
+                "cobertura": {
+                    "azucar": "12o grs",
+                    "chocolate": "4 cucharadas",
+                    "mantequilla": "200 grs"
+                }
+            }
+        };
+        console.log(miReceta.ingredientes.masa.harina);
+        console.log(miReceta.ingredientes.masa.sal);
+        console.log(miReceta.ingredientes.masa.agua);
+    </script>
+</body>
+</html>
